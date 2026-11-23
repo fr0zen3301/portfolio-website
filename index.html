@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khamidullo Maratov</title>
+<meta name="description" content="Khamidullo Maratov is a platform engineer in Seoul. He builds backend services, CLI tooling and authentication for an OpenStack-based public cloud and has a background in information security.">
+<meta name="theme-color" content="#707279" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#34363B" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="font.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top" aria-label="Khamidullo Maratov, back to top">
+      <span class="brand-mark" aria-hidden="true">KM</span>
+      <span class="brand-name">Khamidullo Maratov</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Platform Engineer · DanaCloud · Seoul</p>
+        <h1 id="hero-title"><span>Khamidullo</span><span>Maratov</span></h1>
+        <p class="value">I build cloud backends and developer tools that fail safe. Five wrong passwords lock an account, and deleting a server means typing its name first.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <dl class="facts">
+          <div><dt class="label">Now</dt><dd>Backend and CLI work on DanaIX, an OpenStack public cloud</dd></div>
+          <div><dt class="label">Focus</dt><dd>Auth, provisioning, developer tooling</dd></div>
+          <div><dt class="label">Background</dt><dd>BEng Information Security, two research roles</dd></div>
+          <div><dt class="label">Speaks</dt><dd>Uzbek, Russian, English, Korean</dd></div>
+        </dl>
+      </div>
+
+      <figure class="orbit">
+        <div class="orbit-head"><span>three_body / figure_eight</span><span>velocity Verlet · fixed dt</span></div>
+        <canvas id="orbit" role="img" aria-label="Three bodies tracing a figure-eight orbit, simulated live in the browser"></canvas>
+        <figcaption class="orbit-foot">
+          <span>E <output id="energy">−1.28714</output></span>
+          <span>t <output id="simtime">0.00</output></span>
+          <span class="orbit-note">The figure-eight three-body orbit, running in your browser with velocity Verlet, the integrator EMMA uses. The total energy E stays level. With plain Euler steps it would drift until the orbit flew apart.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">about.md</p>
+        <h2 id="about-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a platform engineer at DanaCloud, where I work on DanaIX, an OpenStack-based public cloud. Most of my time goes into the backend services behind the console (authentication, notifications, and IaaS and PaaS provisioning) and into <code>dana</code>, the platform's command-line tool. I'm also building the DanaIX Documentation Center, and I check each page against the service code before it's published.</p>
+          <p>My degree is in Information Security Engineering, and both of my research roles were security work: anonymizing witnesses in video, and securing drone links, where I built the drones, mapped their control protocol byte by byte and worked on quantum key distribution. I look for the failure case first: anything destructive gets a dry run, and I write down every place my code departs from the spec.</p>
+        </div>
+        <dl class="side-facts">
+          <div><dt class="label">Based in</dt><dd>Seoul, KST (UTC+9)</dd></div>
+          <div><dt class="label">Current project</dt><dd><a href="https://github.com/fr0zen3301/ai-study" target="_blank" rel="noopener">ai-study</a>: learning AI by building, from linear algebra visualizations to deep learning with spiking neural networks (snnTorch)</dd></div>
+          <div><dt class="label">Education</dt><dd>BEng Information Security Engineering, Soonchunhyang University, GPA 3.58 / 4.0</dd></div>
+          <div><dt class="label">Off hours</dt><dd>Gravity simulations in C++ and quantum randomness on the web</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">skills.toml</p>
+        <h2 id="skills-title">Skills</h2>
+      </div>
+      <div class="skills">
+        <section class="skill-group" aria-labelledby="sg-lang">
+          <h3 id="sg-lang" class="toml">[languages]</h3>
+          <p class="skill-note">Python every day; C++ and C for systems code and simulation.</p>
+          <ul class="chips"><li>Python</li><li>C++</li><li>C</li><li>SQL</li><li>Shell</li><li>JavaScript</li><li>Swift</li></ul>
+        </section>
+        <section class="skill-group" aria-labelledby="sg-backend">
+          <h3 id="sg-backend" class="toml">[backend]</h3>
+          <p class="skill-note">The services behind DanaIX: auth, notifications, provisioning.</p>
+          <ul class="chips"><li>FastAPI</li><li>PostgreSQL</li><li>MySQL</li><li>Redis</li><li>pytest</li><li>CLI tooling</li><li>Git</li></ul>
+        </section>
+        <section class="skill-group" aria-labelledby="sg-cloud">
+          <h3 id="sg-cloud" class="toml">[cloud]</h3>
+          <p class="skill-note">OpenStack at work, and Docusaurus for the DanaIX documentation center.</p>
+          <ul class="chips"><li>OpenStack</li><li>AWS (IAM, EC2, S3)</li><li>Linux</li><li>Windows Server</li><li>Docusaurus</li></ul>
+        </section>
+        <section class="skill-group" aria-labelledby="sg-sec">
+          <h3 id="sg-sec" class="toml">[security]</h3>
+          <p class="skill-note">My degree, applied to auth, APIs and drone links.</p>
+          <ul class="chips"><li>Linux hardening</li><li>API security</li><li>Secrets handling</li><li>Account lockout</li><li>Security analysis</li><li>Wireshark</li><li>Protocol reverse engineering</li></ul>
+        </section>
+        <section class="skill-group" aria-labelledby="sg-net">
+          <h3 id="sg-net" class="toml">[networking]</h3>
+          <p class="skill-note">What a public cloud runs on, from VLANs to floating IPs.</p>
+          <ul class="chips"><li>TCP/IP</li><li>Routing &amp; switching</li><li>DNS</li><li>VLANs</li><li>VPCs</li><li>Floating IPs</li><li>NAT &amp; gateways</li><li>DHCP</li><li>SSH</li></ul>
+        </section>
+        <section class="skill-group" aria-labelledby="sg-quantum">
+          <h3 id="sg-quantum" class="toml">[quantum_crypto]</h3>
+          <p class="skill-note">QKD for drone links at the consortium, and quantum randomness in Universe Splitter.</p>
+          <ul class="chips"><li>Qiskit</li><li>Q#</li><li>QKD</li><li>Quantum randomness</li><li>Cryptography</li><li>SHA-256</li><li>Entropy analysis</li></ul>
+        </section>
+        <section class="skill-group" aria-labelledby="sg-hw">
+          <h3 id="sg-hw" class="toml">[hardware]</h3>
+          <p class="skill-note">Raspberry Pi and Arduino in the photo booth, and a drone I built and flew.</p>
+          <ul class="chips"><li>Raspberry Pi</li><li>Arduino</li><li>Drone assembly</li><li>USB serial</li><li>Wi-Fi AP / STA</li><li>ToF sensors</li><li>Scratch</li></ul>
+        </section>
+        <section class="skill-group" aria-labelledby="sg-ml">
+          <h3 id="sg-ml" class="toml">[research_ml]</h3>
+          <p class="skill-note">Computer vision for witnesses and drones, plus an ongoing study plan.</p>
+          <ul class="chips"><li>OpenCV</li><li>MediaPipe</li><li>Face &amp; gesture recognition</li><li>Wake-word detection</li><li>AUC-ROC evaluation</li><li>Roboflow</li><li>snnTorch</li></ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">projects/</p>
+        <h2 id="projects-title">Selected projects</h2>
+        <p class="lede">One from DanaCloud, two from research, two built on my own time.</p>
+      </div>
+
+      <div class="projects">
+        <!-- 1. dana CLI -->
+        <article class="project" id="p-cli" aria-labelledby="p-cli-t">
+          <div class="project-visual">
+            <figure class="term-fig">
+              <pre class="term" aria-label="Example terminal session with the dana CLI"><span class="p">$</span> dana server create web-01 --wait --ssh
+<span class="ok">✓</span> input valid
+  creating web-01
+  waiting for ACTIVE <span class="d">..........</span> <span class="ok">done</span>
+  connecting to 203.0.113.24
+<span class="d">debian@web-01:~$</span> exit
+
+<span class="p">$</span> dana server delete web-01
+  This permanently deletes web-01.
+  Type the server name to confirm: web-01
+<span class="ok">✓</span> deleted web-01</pre>
+              <figcaption class="label">Illustrative session</figcaption>
+            </figure>
+          </div>
+          <div class="project-body">
+            <p class="label">DanaCloud · developer tooling · 2026</p>
+            <h3 class="project-title" id="p-cli-t">The dana CLI, past its v1.0 spec</h3>
+            <p class="project-result">Made the dana CLI fast for the common path and careful with destructive commands.</p>
+            <p class="project-how">I added <code>server wait</code> and <code>server ssh</code>, chained as <code>create --wait --ssh</code>, plus name-based targeting, a typed confirmation for delete, <code>--dry-run</code>, and input validation before any request goes out.</p>
+            <div class="metrics">
+              <p class="metric"><b>9</b><span>additions past the v1.0 spec</span></p>
+              <p class="metric"><b>1</b><span>command from create to an SSH session</span></p>
+              <p class="metric"><b>0</b><span>requests sent on invalid input</span></p>
+            </div>
+            <details class="more">
+              <summary><span class="more-open">Read more</span><span class="more-close">Show less</span></summary>
+            <dl class="record">
+              <div><dt>Problem</dt><dd>The v1.0 spec covered the API calls and little else. Getting from "create" to a shell meant polling for status and looking up an address, every command needed a server ID, and nothing double-checked a delete.</dd></div>
+              <div><dt>Approach</dt><dd>I added <code>server wait</code> and <code>server ssh</code> and chained them as <code>create --wait --ssh</code>. Commands accept server names, <code>delete</code> asks you to type the name, <code>--dry-run</code> prints the exact API payload, and the CLI validates input before it sends anything. <code>server create</code> and <code>flavor list</code> show a monthly cost estimate from the per-datacenter pricing catalog, and <code>billing usage</code> ranks resources by spend. I wrote up each deviation from the PRD in an engineering addendum.</dd></div>
+              <div class="outcome"><dt>Outcome</dt><dd>
+                The common path is one command, and the dangerous ones ask first.
+              </dd></div>
+            </dl>
+            </details>
+            <div class="project-foot">
+              <ul class="badges" aria-label="Tech used"><li>Python</li><li>Typer</li><li>REST API</li><li>OpenStack</li></ul>
+              <p class="project-links"><span class="private">Internal tool · code private</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. AIDrone -->
+        <article class="project" id="p-drone" aria-labelledby="p-drone-t">
+          <div class="project-visual">
+            <div class="viz" role="img" aria-label="The drone's 20-byte command frame: a 5-byte header, a checksum, movement and altitude fields, and settings bytes">
+              <div class="viz-head"><span class="label">command frame · controller → drone</span><span class="label">20 bytes</span></div>
+              <div class="bytes" aria-hidden="true">
+                <span class="h"></span><span class="h"></span><span class="h"></span><span class="h"></span><span class="h"></span><span class="k"></span>
+                <span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="bytes-scale" aria-hidden="true"><span>0</span><span>5</span><span>10</span><span>15</span><span>19</span></div>
+              <dl class="fieldmap" aria-hidden="true">
+                <dt>0–4</dt><dd>26 A8 14 B1 14 · header</dd>
+                <dt>5</dt><dd>checksum</dd>
+                <dt>6–11</dt><dd>Y, X, rotation · signed int16</dd>
+                <dt>12–13</dt><dd>altitude · uint16</dd>
+                <dt>14–15</dt><dd>control mode · option flags</dd>
+                <dt>16–19</dt><dd>settings · defaults 64 00 64 00</dd>
+              </dl>
+              <div class="legend" aria-hidden="true"><span><i class="k-hd"></i>header</span><span><i class="k-ck"></i>checksum</span><span><i class="k-mv"></i>movement</span><span><i class="k-c"></i>settings</span></div>
+              <p class="viz-note">Telemetry coming back reuses the header with A0 | type in byte 3. When bit 5 of byte 7 is set, byte 13 holds a one-byte ToF distance reading.</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="label">National Consortium for Drone Security · 2025–26</p>
+            <h3 class="project-title" id="p-drone-t">AIDrone: reading a drone's control link byte by byte</h3>
+            <p class="project-result">Built and flew a research drone, then decoded the frames it sends and receives.</p>
+            <p class="project-how">I traced the drone's SDK down to raw bytes to map its 20-byte command and telemetry frames, then analyzed its Wi-Fi video traffic in Wireshark.</p>
+            <div class="metrics">
+              <p class="metric"><b>20</b><span>bytes in every frame, header to checksum</span></p>
+              <p class="metric"><b>2</b><span>links analyzed: serial control and Wi-Fi video</span></p>
+              <p class="metric"><b>3</b><span>AI features on board: face, gesture, voice</span></p>
+            </div>
+            <details class="more">
+              <summary><span class="more-open">Read more</span><span class="more-close">Show less</span></summary>
+            <dl class="record">
+              <div><dt>Problem</dt><dd>To secure a drone's control link you first need to know exactly what travels over it, down to the byte, and the SDK only exposes it as function calls.</dd></div>
+              <div><dt>Approach</dt><dd>I assembled the drone, set up Raspberry Pi OS with the Pi as a Wi-Fi access point, and wrote Python keyboard control on the pyaidrone SDK for takeoff, landing, movement, altitude and yaw, plus Scratch automation. To see the control link, I traced the SDK's packet builder and stream parser down to raw bytes. Commands go over USB serial to the radio dongle as fixed 20-byte frames, streamed continuously. The parser is a small state machine: it hunts for a 4-byte header, collects the frame and checks its checksum. For the Wi-Fi link, I captured traffic in Wireshark during live camera streaming and found the MJPEG video stream over TCP. Its spurious retransmissions came from delayed ACKs and showed where the link's latency limits were. Face and gesture recognition, automated photo capture and on-device wake-word voice control came after.</dd></div>
+              <div class="outcome"><dt>Outcome</dt><dd>
+                A field-by-field map of the command and telemetry frames, and a drone that flies from Python, Scratch or voice commands, with face and gesture recognition on board.
+              </dd></div>
+            </dl>
+            </details>
+            <div class="project-foot">
+              <ul class="badges" aria-label="Tech used"><li>Python</li><li>pyaidrone</li><li>Raspberry Pi</li><li>USB serial</li><li>Wireshark</li><li>OpenCV</li></ul>
+              <p class="project-links"><span class="private">Consortium research</span></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Face anonymization -->
+        <article class="project" id="p-face" aria-labelledby="p-face-t">
+          <div class="project-visual">
+            <div class="viz" role="img" aria-label="Illustration: 32 video frames, 31 anonymized and one missed">
+              <div class="viz-head"><span class="label">why per-frame misses matter</span><span class="label">illustration</span></div>
+              <div class="frames" aria-hidden="true">
+                <span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span>
+                <span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span>
+                <span class="f"></span><span class="f"></span><span class="f"></span><span class="f miss"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span>
+                <span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span>
+              </div>
+              <div class="legend" aria-hidden="true"><span><i class="k-anon"></i>face replaced</span><span><i class="k-miss"></i>face missed</span></div>
+              <p class="viz-note">31 of 32 frames caught is a 96.9% detection rate, and the witness is still identifiable from frame 20.</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="label">Soonchunhyang University lab · 2024</p>
+            <h3 class="project-title" id="p-face-t">Witness face anonymization</h3>
+            <p class="project-result">Makes a witness in video look like a different person, reversibly, without storing their face.</p>
+            <p class="project-how">Instead of blurring, it replaces parts of the face and changes hair and eye color, and whoever holds the key can reverse it. I spent about two months evaluating it frame by frame.</p>
+            <div class="metrics">
+              <p class="metric"><b>0</b><span>original faces stored</span></p>
+              <p class="metric"><b>1 frame</b><span>is a failure, so I checked recall per frame</span></p>
+            </div>
+            <details class="more">
+              <summary><span class="more-open">Read more</span><span class="more-close">Show less</span></summary>
+            <dl class="record">
+              <div><dt>Problem</dt><dd>Video used in legal and security settings has to hide witnesses, and one clear frame is enough to recognize someone.</dd></div>
+              <div><dt>Approach</dt><dd>Instead of blurring, the system replaces parts of the face and changes features like hair and eye color. The system never stores the original face, and whoever holds the key can run the transformation backwards. I spent about two months on evaluation: running the pipeline over test footage, checking frame by frame for missed faces and glitched swaps, and scoring detection with AUC-ROC across thresholds on imbalanced data.</dd></div>
+              <div class="outcome"><dt>Outcome</dt><dd>
+                I judged misses per frame and spent the most time on the rare hard cases: faces in profile, partly covered, or badly lit.
+              </dd></div>
+            </dl>
+            </details>
+            <div class="project-foot">
+              <ul class="badges" aria-label="Tech used"><li>Python</li><li>OpenCV</li><li>MediaPipe</li><li>PyQt5</li><li>AUC-ROC</li></ul>
+              <p class="project-links"><span class="private">Lab project · code not public</span><a href="#notes">Read the note</a></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. EMMA -->
+        <article class="project" id="p-emma" aria-labelledby="p-emma-t">
+          <div class="project-visual">
+            <img class="shot-img" src="emma.png" width="1600" height="1000" loading="lazy" decoding="async" alt="EMMA running the solar system: the Sun and the inner planets, labeled, against a field of stars">
+          </div>
+          <div class="project-body">
+            <p class="label">Personal · open source · C++</p>
+            <h3 class="project-title" id="p-emma-t">EMMA, a real-time gravity simulator</h3>
+            <p class="project-result">Runs the solar system forward from today's real planet positions, in real units, so Earth takes a year to go around the Sun.</p>
+            <p class="project-how">Velocity Verlet keeps the energy error from building up. Close passes split into smaller steps, and above 64 bodies a Barnes-Hut quadtree cuts the force step to about N log N.</p>
+            <div class="metrics">
+              <p class="metric"><b>10</b><span>bodies placed from NASA JPL Horizons data for today</span></p>
+              <p class="metric"><b>27.3</b><span>days for the Moon to go around Earth</span></p>
+              <p class="metric"><b>4,096</b><span>pieces a step can split into during a close pass</span></p>
+            </div>
+            <details class="more">
+              <summary><span class="more-open">Read more</span><span class="more-close">Show less</span></summary>
+            <dl class="record">
+              <div><dt>Problem</dt><dd>Simple N-body demos step with Euler, so the energy error builds up and planets slowly spiral away. One long step through a near miss also jumps past the closest point and sends the two bodies apart faster than they arrived. Summing the pull between every pair gets slow as the body count grows.</dd></div>
+              <div><dt>Approach</dt><dd>EMMA works in astronomical units, solar masses and days. On start it asks NASA JPL's Horizons service where the Sun, the planets and the Moon are at 00:00 UTC today, and caches the answer so later starts that day need no network. It integrates with velocity Verlet, whose energy error swings around a fixed value. Before each piece of a step it works out every pair's dynamical time and the time the pair needs to close the gap, so a close pass splits into as many as 4,096 pieces. Up to 64 bodies it sums every pair exactly, and above that a Barnes-Hut quadtree treats distant groups as single masses. Merges keep mass and momentum. In the app you click to place a body or drag to launch one, and a dashed line shows its path before you let go.</dd></div>
+              <div class="outcome"><dt>Outcome</dt><dd>
+                Earth's orbit takes one sidereal year, and energy and angular momentum stay conserved over ten simulated years. The test suite checks both.
+              </dd></div>
+            </dl>
+            </details>
+            <div class="project-foot">
+              <ul class="badges" aria-label="Tech used"><li>C++17</li><li>SFML 3</li><li>Dear ImGui</li><li>CMake</li><li>JPL Horizons API</li></ul>
+              <p class="project-links"><a href="https://github.com/fr0zen3301/EMMA" target="_blank" rel="noopener">Code on GitHub</a></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Universe Splitter -->
+        <article class="project" id="p-splitter" aria-labelledby="p-splitter-t">
+          <div class="project-visual">
+            <div class="viz" role="img" aria-label="Seven randomness sources, four of them quantum, combined with SHA-256 into one draw">
+              <div class="viz-head"><span class="label">randomness sources</span><span class="label">queried in parallel</span></div>
+              <div class="seg-bar" aria-hidden="true"><span class="q"></span><span class="q"></span><span class="q"></span><span class="q"></span><span></span><span></span><span></span></div>
+              <ul class="source-list" aria-hidden="true">
+                <li class="q">qrandom.io</li><li class="q">ANU QRNG</li>
+                <li class="q">lfdr QRNG</li><li class="q">CURBy-Q</li>
+                <li>NIST beacon</li><li>INMETRO beacon</li>
+                <li>CURBy</li>
+              </ul>
+              <div class="legend" aria-hidden="true"><span><i class="k-q"></i>quantum</span><span><i class="k-c"></i>signed beacon</span></div>
+              <p class="pipe" aria-hidden="true"><b>7 responses</b><span>→</span><b>SHA-256</b><span>→</span><b>1 draw</b></p>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="label">Personal · open source · web</p>
+            <h3 class="project-title" id="p-splitter-t">Universe Splitter</h3>
+            <p class="project-result">A Many-Worlds decision maker that picks between two weighted options using quantum randomness.</p>
+            <p class="project-how">It queries seven randomness sources at once through a Cloudflare proxy and hashes every answer with SHA-256 into one draw.</p>
+            <div class="metrics">
+              <p class="metric"><b>7</b><span>sources queried per draw</span></p>
+              <p class="metric"><b>4</b><span>of them quantum</span></p>
+              <p class="metric"><b>1</b><span>honest source is enough</span></p>
+            </div>
+            <details class="more">
+              <summary><span class="more-open">Read more</span><span class="more-close">Show less</span></summary>
+            <dl class="record">
+              <div><dt>Problem</dt><dd>The app's premise needs a draw from physical quantum sources, and any single public source can be offline or untrustworthy.</dd></div>
+              <div><dt>Approach</dt><dd>The app queries all sources at once through a same-origin Cloudflare proxy, which keeps API keys on the server and spares the browser any cross-origin calls. It hashes the responses together with SHA-256. If nothing answers, it falls back to <code>crypto.getRandomValues</code> and labels the result "not quantum".</dd></div>
+              <div class="outcome"><dt>Outcome</dt><dd>
+                The draw stays unpredictable as long as any one source is honest. Nothing the user types leaves the browser.
+              </dd></div>
+            </dl>
+            </details>
+            <div class="project-foot">
+              <ul class="badges" aria-label="Tech used"><li>React 19</li><li>Vite</li><li>Tailwind CSS</li><li>Cloudflare Pages</li><li>SHA-256</li></ul>
+              <p class="project-links"><a href="https://github.com/fr0zen3301/universe-splitter" target="_blank" rel="noopener">Code on GitHub</a></p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience" aria-labelledby="experience-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">experience.log</p>
+        <h2 id="experience-title">Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li class="entry">
+          <p class="when"><span>04/2026 – now</span><span>Seoul</span><span class="now-chip">current</span></p>
+          <div class="entry-body">
+            <h3>Platform Engineer</h3>
+            <p class="org">DanaCloud</p>
+            <ul>
+              <li>Work on the backend services behind DanaIX: authentication, notifications, and IaaS and PaaS provisioning (FastAPI, PostgreSQL, Redis).</li>
+              <li>Built account lockout in the authentication service: five consecutive failed sign-ins lock the account for 15 minutes and email a reset link.</li>
+              <li>Extended the <code>dana</code> CLI past its v1.0 spec, with cost estimates and spend ranking from the pricing catalog, and documented every deviation from the PRD.</li>
+              <li>Building the DanaIX Documentation Center on Docusaurus. I revised its PRD from start to finish and made the final calls on it, and I check each page against the service code before it goes live.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="when"><span>10/2025 – 03/2026</span><span>Asan</span></p>
+          <div class="entry-body">
+            <h3>Researcher</h3>
+            <p class="org">National Consortium for Drone Security</p>
+            <ul>
+              <li>Implemented quantum key distribution to secure drone-to-drone and drone-to-ground-station links for UAV fleets.</li>
+              <li>Designed Qiskit experiments measuring how reliably qubit states survive the QKD process.</li>
+              <li>Built and flew the AIDrone research platform: assembled the hardware, set up the Raspberry Pi as a Wi-Fi access point, and wrote Python keyboard control and Scratch automation.</li>
+              <li>Mapped the drone's 20-byte serial command and telemetry frames from the pyaidrone SDK, and analyzed its Wi-Fi traffic in Wireshark.</li>
+              <li>Added face and gesture recognition with OpenCV, automated photo capture, and on-device wake-word voice control.</li>
+              <li>Developed a hands-on drone workshop that gave students their first flight.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="when"><span>08/2024 – 12/2024</span><span>Asan</span></p>
+          <div class="entry-body">
+            <h3>AI Software Developer</h3>
+            <p class="org">Soonchunhyang University</p>
+            <ul>
+              <li>Built a face anonymization system in Python and OpenCV to protect witness identities in legal and security settings.</li>
+              <li>Evaluated detection models with AUC-ROC across thresholds on imbalanced datasets.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="when"><span>06/2024 – 09/2024</span><span>Cebu, Philippines</span></p>
+          <div class="entry-body">
+            <h3>AI Research and Algorithm Development Intern</h3>
+            <p class="org">University of San Carlos</p>
+            <ul>
+              <li>Tuned facial and gesture recognition algorithms in Python and OpenCV through structured experiments.</li>
+              <li>Wired Raspberry Pi and Arduino hardware to control the camera and movement of an interactive photo booth that is still in use.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="entry">
+          <p class="when"><span>09/2021 – 08/2025</span><span>Asan</span></p>
+          <div class="entry-body">
+            <h3>BEng, Information Security Engineering</h3>
+            <p class="org">Soonchunhyang University · GPA 3.58 / 4.0</p>
+            <ul>
+              <li>Coursework in networking, operating systems, computer architecture and cybersecurity.</li>
+              <li>Projects: security analysis of Linux-based EV infotainment systems; deepfake-based avatar spoofing prevention.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="notes" aria-labelledby="notes-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">notes/</p>
+        <h2 id="notes-title">Notes and research</h2>
+      </div>
+      <div class="notes-grid">
+        <article class="essay" aria-labelledby="essay-title">
+          <p class="label">Note · face anonymization project</p>
+          <h3 id="essay-title">Why I checked every frame</h3>
+          <div class="essay-body">
+            <p>The part of the face anonymization project I didn't enjoy was evaluation.</p>
+            <p>At Soonchunhyang University's lab, we built a program to hide witnesses' identities in video. Instead of blurring, it replaces parts of the face and changes features like hair and eye color, so the witness looks like a completely different person. The program never stores the original face, and whoever holds the key can run the transformation backwards. I was a developer on it, using OpenCV, MediaPipe and PyQt5.</p>
+            <p>But for a bit more than two months, most of my time went into running the pipeline over test footage, checking frame by frame where a face was missed or the swap glitched, and checking that the restored face matched the original. And the cases that mattered most, faces turned to the side, partly covered, or badly lit, were rare in our data.</p>
+            <p>I kept at it because of what a miss costs. If the system loses a witness's face for even a few frames, their identity is exposed.</p>
+            <p class="pull">One clear frame is enough to recognize someone.</p>
+            <p>Our data was imbalanced, so a model could score very well and still miss exactly those frames. Only the frame-by-frame checking caught that.</p>
+            <p>I still prefer building to measuring. But I stopped treating evaluation as the boring part, because it's the only part that tells you whether the thing is safe to ship.</p>
+          </div>
+        </article>
+
+        <aside class="side" aria-label="Research and coursework">
+          <section>
+            <h3>Research</h3>
+            <ul>
+              <li><strong>AI-driven secure autonomous drone systems</strong><span>Paper, February 2026. Voice control with on-device wake-word detection, plus network traffic analysis of the drone's links.</span></li>
+              <li><strong>Quantum key distribution for UAV links</strong><span>National Consortium for Drone Security, 2025–26. Qiskit experiments on qubit state reliability.</span></li>
+              <li><strong>Security of Linux-based EV infotainment</strong><span>Undergraduate project, Soonchunhyang University.</span></li>
+              <li><strong>Deepfake avatar spoofing prevention</strong><span>Undergraduate project, Soonchunhyang University.</span></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Coursework</h3>
+            <ul>
+              <li><strong>Quantum Mechanics</strong><span>University of Colorado Boulder, online, 2025</span></li>
+              <li><strong>Calculus: Intermediate</strong><span>University of Oxford, online, CATS credit, 2025</span></li>
+              <li><strong>Quantum Physics (8.04)</strong><span>MIT, online</span></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Studying in public</h3>
+            <ul>
+              <li><strong><a href="https://github.com/fr0zen3301/ai-study" target="_blank" rel="noopener">ai-study</a></strong><span>My current project: learning AI by building, each piece with its own README. It starts with a linear-algebra grid warp visualized in NumPy and Matplotlib.</span></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Also on GitHub</h3>
+            <ul>
+              <li><strong><a href="https://github.com/fr0zen3301/BodyTracking" target="_blank" rel="noopener">BodyTracking</a></strong><span>An augmented-reality iOS app in Swift that tracks your skeleton as you move (ARKit, RealityKit).</span></li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap contact-inner">
+    <p class="label">contact</p>
+    <h2 id="contact-title">Get in touch</h2>
+    <p class="lede">I'm looking for a platform or backend role where security is part of the design. Email reaches me fastest, in English, 한국어, Русский or Oʻzbekcha.</p>
+    <div class="email-row">
+      <a class="email" id="email-text" href="mailto:obukisan17@gmail.com">obukisan17@gmail.com</a>
+      <button class="btn btn-ghost copy-btn" type="button" id="copy-email" data-copy="obukisan17@gmail.com" data-target="email-text">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M10.5 2.5h-7a1 1 0 0 0-1 1v7"/></svg>
+        <span class="copy-label" aria-live="polite">Copy</span>
+      </button>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/fr0zen3301" target="_blank" rel="noopener"><span class="label">GitHub</span><span class="v">github.com/fr0zen3301</span></a>
+      <a href="https://www.linkedin.com/in/khamidullo-maratov1337" target="_blank" rel="noopener"><span class="label">LinkedIn</span><span class="v">in/khamidullo-maratov1337</span></a>
+      <div><span class="label">Location</span><p class="v">Seoul · KST, UTC+9</p></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
